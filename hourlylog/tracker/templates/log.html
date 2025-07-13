@@ -11,6 +11,9 @@
 </head>
 <body>
   {% load custom_tags %}
+    {% if user.is_authenticated %}
+    <p>Logged in as {{ user.username }} | <a href="/accounts/logout/">Logout</a></p>
+    {% endif %}
   <h2>Daily Hour Tracker</h2>
 
   <form method="get">
