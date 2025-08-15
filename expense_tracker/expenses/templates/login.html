@@ -1,0 +1,12 @@
+<!-- login.html -->
+<div class="flex justify-center items-center h-screen bg-gray-900 text-white">
+  <form method="post" class="bg-gray-800 p-6 rounded-lg shadow-lg w-80">
+    {% csrf_token %}
+    <h2 class="text-2xl mb-4">Login</h2>
+    {{ form.as_p }}
+    <button class="w-full bg-purple-600 hover:bg-purple-700 text-white py-2 rounded mt-4">
+      Login
+    </button>
+    <p class="mt-4 text-sm">Don’t have an account? <a href="{% url 'signup' %}" class="text-purple-400">Sign Up</a></p>
+  </form>
+</div>
