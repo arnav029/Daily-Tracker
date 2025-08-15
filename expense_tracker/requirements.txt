@@ -11,3 +11,4 @@ PyQt5-Qt5==5.15.2
 PyQt5-sip==12.13.0
 sqlparse==0.5.3
 tzdata==2025.1
+whitenoise

@@ -1,6 +1,6 @@
 from django.urls import path, include
 from rest_framework import routers
-from expenses.views import ExpenseViewSet, home, expenses_page, signup_view, login_view, logout_view
+from expenses.views import ExpenseViewSet, home, expenses_page
 
 router = routers.DefaultRouter()
 router.register(r'expenses', ExpenseViewSet, basename='expense')
